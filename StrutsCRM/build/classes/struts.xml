@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+
+		<action name="addCustomer" method="addCustomer"
+			class="com.zuntech.controller.ActionController">
+			<result name="success">/index.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		
+		
+		<action name="getCustomers" method="getCustomers"
+			class="com.zuntech.controller.ActionController">
+			<result name="success">/index.jsp</result>
+		</action>
+		
+		
+		<action name="editCustomer" method="editCustomer"
+			class="com.zuntech.controller.ActionController">
+			<result name="success">/editCustomer.jsp</result>
+			<result name="input">/editCustomer.jsp</result>
+		</action>
+		
+		
+		<action name="updateCustomer" method="updateCustomer"
+			class="com.zuntech.controller.ActionController">
+			<result name="success">/index.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		
+		
+		<action name="deleteCustomer" method="deleteCustomer"
+			class="com.zuntech.controller.ActionController">
+			<result name="success">/index.jsp</result>
+			
+		</action>
+
+	</package>
+</struts>   
